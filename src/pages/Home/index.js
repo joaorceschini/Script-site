@@ -2,6 +2,7 @@ import React from 'react';
 
 // import { Container } from './styles';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 import './styles.css';
 
@@ -19,7 +20,7 @@ function Home() {
           <h1>Script</h1>
           <div className="prime-description">
             <div className="desc">
-              Um simples bot para discord com o obejtivo de te ajudar. Adicione agora mesmo em seu servidor!
+              Um simples bot para discord com o objetivo de te ajudar. Adicione agora mesmo em seu servidor!
             </div>
           </div>
           <div className="buttons">
@@ -28,11 +29,22 @@ function Home() {
               <a rel="noopener" target="_blank" href="https://discord.gg/76TpGMn"><div className="button" id="button-support">Servidor oficial</div></a>
             </div>
             
-          </div>  
+          </div>
+        </div>
+      </div>
+
+      <div className="functions-hero">
+        <div className="wrapper-functions">
+          <div className="function-item">Confiável</div>
+          <div className="function-item">Simples</div>
+          <div className="function-item">Completo</div>
+          <div className="function-item">Divertido</div>
         </div>
       </div>
 
     </main>
+
+    <Footer />
     </div>
   );
 }

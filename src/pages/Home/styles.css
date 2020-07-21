@@ -1,4 +1,4 @@
-#home {
+/* #home {
   flex-direction: column;
   align-items: center;
 }
@@ -200,6 +200,280 @@
     padding: 15px 25px;
     font-size: 20px;
   }
+} */
+
+
+/* MAX-WIDTH */
+/* 
+
+@media (max-width: 520px) {
+  #home .prime-hero .img {
+    margin: 0;
+  }
+
+  #home .prime-hero .img .border {
+    width: 250px;
+    height: 250px;
+  }
+
+  #home .prime-hero .img .border:after {
+    width: 40px;
+    height: 40px;
+    right: 12px;
+    bottom: 12px;
+  }
+
+  #home .prime-hero h1 {
+    font-size: 30px;
+  }
+
+  #home .prime-hero .prime-description .desc {
+    font-size: 16px;
+  }
+
+  #home .prime-hero .buttons .buttons-hero .button {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 365px) {
+  #home .prime-hero .buttons .buttons-hero {
+    flex-direction: column;
+  }
+}
+
+@media (min-height: 1000px) {
+    #home .prime-hero {
+      margin-top: 120px;
+    }
+} */
+
+
+#home {
+  flex-direction: column;
+  align-items: center;
+  padding: 0 150px;
+}
+
+#home .prime-hero {
+  height: 680px;
+  padding: 0;
+  flex-direction: column;
+  width: 100%;
+}
+
+#home .prime-hero .prime-description {
+  color: white;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#home .prime-hero .prime-description .desc {
+  width: 300px;
+  font-size: 18px;
+}
+
+#home .prime-hero .img {
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#home .prime-hero .img .border {
+  width: 290px;
+  height: 290px;
+  background-image: url('../../assets/photos/avatar.jpg');
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0px 0px 15px -4px #131215;
+}
+
+#home .prime-hero .img .border:after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: #43b581;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 11px solid #0b0a0d;
+}
+
+#home .prime-hero .text {
+  flex-direction: column;
+}
+
+#home .prime-hero h1 {
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 40px;
+}
+
+#home .prime-hero .buttons {
+  flex-direction: column;
+}
+
+#home .prime-hero .buttons .buttons-hero {
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+#home .prime-hero .buttons .buttons-hero a {
+  text-decoration: none;
+  outline: none;
+}
+
+#home .prime-hero .buttons .buttons-hero .button {
+  padding: 12px 20px;
+  color: white;
+  background-color: rgb(113, 89, 193);
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  transition: all .2s ease-in-out;
+}
+
+#home .prime-hero .buttons .buttons-hero .button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+#home .prime-hero .buttons #button-support a {  
+  text-decoration: none;
+  color: white;
+  outline: none;
+}
+
+#home .prime-hero .buttons .buttons-hero .button #button-support a:hover {
+  background-color: white;
+  color: rgb(113, 89, 193);
+}
+
+#home .functions-hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 150px 0;
+}
+
+#home .wrapper-functions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+#home .function-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+
+@media (min-width: 1220px) {
+  #home .prime-hero {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #home .prime-hero .img {
+    width: initial;
+    height: initial;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home .prime-hero .img .border {
+    width: 400px;
+    height: 400px;
+  }
+
+  #home .prime-hero .img .border:after {
+    width: 70px;
+    height: 70px;
+    right: 30px;
+    bottom: 20px;
+  }
+
+  #home .prime-hero .text {
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home .prime-hero .text h1 {
+    text-align: right;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 50px;
+  }
+
+  #home .prime-hero .text .prime-description {
+    text-align: right;
+    font-size: 20px;
+  }
+
+  #home .prime-hero .text .prime-description .desc {
+    width: 400px;
+  }
+
+  #home .prime-hero .buttons .buttons-hero {
+    width: 400px;
+    justify-content: flex-end;
+  }
+
+  #home .prime-hero .buttons .buttons-hero .button {
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+
+  #home .prime-hero .buttons .buttons-hero .button#button-support {
+    margin-right: 0;
+  }
+}
+
+
+@media (min-width: 1800px) {
+  #home .prime-hero {
+    padding: 0 220px;
+  }
+
+  #home .prime-hero .img .border {
+    width: 450px;
+    height: 450px;
+  }
+
+  #home .prime-hero .img .border:after {
+    width: 75px;
+    height: 75px;
+    right: 35px;
+    bottom: 28px;
+    border: 13px solid #0b0a0d;
+  }
+
+  #home .prime-hero .text h1 {
+    font-size: 60px;
+  }
+
+  #home .prime-hero .text .prime-description {
+    font-size: 24px;
+  }
+
+  #home .prime-hero .buttons .buttons-hero .button {
+    padding: 15px 25px;
+    font-size: 20px;
+  }
 }
 
 
@@ -207,6 +481,9 @@
 
 
 @media (max-width: 520px) {
+  #home {
+    padding: 0;
+  }
   #home .prime-hero .img {
     margin: 0;
   }
